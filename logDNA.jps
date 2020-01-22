@@ -1,6 +1,6 @@
 _info : 'https://docs.cloudscripting.com/1.6.2/'
 version: 1.6.2
-build: 20200121
+build: 20200122
 type: update
 name: 'logDNA'
 id: 'logDNA'
