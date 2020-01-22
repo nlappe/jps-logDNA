@@ -59,6 +59,8 @@ buttons:
   - caption: Status
     loadingText: Checking..
     action: checkLogDNAStatus
+  - caption: Dashboard
+    href: https://app.logdna.com/account/signin
   
 onAfterRedeployContainer:
   install:
