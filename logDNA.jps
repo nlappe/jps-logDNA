@@ -68,7 +68,7 @@ onAfterAddNode:
   install:
     name: Install Action
 
-onAfterCloneNodes
+onAfterCloneNodes:
   install:
     name: Install Action
 
