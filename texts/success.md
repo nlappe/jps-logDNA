@@ -1,0 +1,2 @@
+Success!
+logDNA is ready!
