@@ -21,7 +21,7 @@ For more information on what Jelastic add-on is and how to apply it, follow the 
 
 ### Installation Process
 
-![Install](../../raw/master/images/install_options.png)
+![Install](https://raw.githubusercontent.com/layershift/jps-logDNA/master/images/install_options.png)
 
 * Ingestion Key : The Ingestion Key provided in your LogDNA dashboard
 * Tags : Tag to add to sent log entries
@@ -36,7 +36,7 @@ For more information on what Jelastic add-on is and how to apply it, follow the 
 #/opt/tomcat/logs
 ### Actions
 
-![Options](../../raw/master/images/options.png)
+![Options](https://raw.githubusercontent.com/layershift/jps-logDNA/master/images/options.png)
 Once installed you can:
 
 * Restart LogDNA
