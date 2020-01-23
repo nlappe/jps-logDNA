@@ -26,17 +26,19 @@ For more information on what Jelastic add-on is and how to apply it, follow the 
 * Ingestion Key : The Ingestion Key provided in your LogDNA dashboard
 * Tags : Tag to add to sent log entries
 * Logs to monitor : Multiple folders from where to read the logs. 1.linne
+```
 #lines starting with # are ignored
 #Nginx load balancer
 #/var/log/nginx/*access_log
 #/var/log/nginx/*error_log
 #Tomcat nodes
 #/opt/tomcat/logs/catalina.out
-
 #/opt/tomcat/logs
+```
 ### Actions
 
 ![Options](https://raw.githubusercontent.com/layershift/jps-logDNA/master/images/options.png)
+
 Once installed you can:
 
 * Restart LogDNA
