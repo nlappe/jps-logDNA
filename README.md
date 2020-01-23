@@ -1,4 +1,4 @@
-# Strongswan Add-on
+# logDNA Add-on
 
 This repository provides [LogDNA](https://docs.logdna.com/docs/getting-started) add-on for Jelastic Platform.
 
@@ -13,30 +13,39 @@ LogDNA is a cloud log management software that aggregates all system and applica
 ### Deployment
 In order to get this solution instantly deployed, click the "Deploy to Jelastic" button
 
-[![GET IT HOSTED](https://raw.githubusercontent.com/jelastic-jps/jpswiki/master/images/getithosted.png)](https://app.j.layershift.co.uk/?manifest=../../raw/master/manifest.jps)
+[![GET IT HOSTED](https://raw.githubusercontent.com/jelastic-jps/jpswiki/master/images/getithosted.png)](https://app.j.layershift.co.uk/?manifest=https://raw.githubusercontent.com/layershift/jps-logDNA/master/logDNA.jps)
 
-To deploy this package to Jelastic Private Cloud, import [this JPS manifest](../../raw/master/manifest.jps) within your dashboard ([detailed instruction](https://docs.jelastic.com/environment-export-import#import)).
+To deploy this package to Jelastic Private Cloud, import [this JPS manifest](https://raw.githubusercontent.com/layershift/jps-logDNA/master/logDNA.jps) within your dashboard ([detailed instruction](https://docs.jelastic.com/environment-export-import#import)).
 
 For more information on what Jelastic add-on is and how to apply it, follow the [Jelastic Add-ons](https://github.com/jelastic-jps/jpswiki/wiki/Jelastic-Addons) reference.
 
 ### Installation Process
 
-![Install](../../raw/master/images/strongswan_install_options.png)
+![Install](../../raw/master/images/install_options.png)
 
 * Ingestion Key : The Ingestion Key provided in your LogDNA dashboard
-
+* Tags : Tag to add to sent log entries
 * Logs to monitor : Multiple folders from where to read the logs. 1.linne
-/opt/tomcat/log/
+#lines starting with # are ignored
+#Nginx load balancer
+#/var/log/nginx/*access_log
+#/var/log/nginx/*error_log
+#Tomcat nodes
+#/opt/tomcat/logs/catalina.out
 
+#/opt/tomcat/logs
 ### Actions
 
-![Options](../../raw/master/images/strongswan_options.png)
+![Options](../../raw/master/images/options.png)
 Once installed you can:
 
 * Restart LogDNA
 * Change the configuration parameters using Configure button
 * Show the configration file content using Show Configuration File button
 * Check LogDNA status using Status button
+
+* Status to check the service status
+* Dashboard to open logDNA dashboard
 
 ### CLI options:
 ```
@@ -45,7 +54,3 @@ sudo /etc/init.d/logdna-agent stop
 sudo /etc/init.d/logdna-agent start
 logdna-agent -h
 ```
-
-### Additional checks
-
-N/A
