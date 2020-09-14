@@ -112,7 +112,6 @@ actions:
           - logdna-agent -k "${settings.ingestionKey}";
           - logdna-agent -s hostname=$(hostname);
           - logdna-agent -u logdir;
-          - logdna-agent -s logdir=/var/log;
           - for log in $(printf "${settings.logPaths}" | egrep -v "#|^/root|^/etc|^/var/lib"); do logdna-agent -d "$log"; if [ $? -gt 0 ]; then echo -e "Issue:\nFailed to add $log"; exit 0; fi; done;
           - logdna-agent -u tags;
           - if [ "" != "${settings.logDNATag}" ]; then logdna-agent -t "${settings.logDNATag}"; if [ $? -gt 0 ]; then echo -e "Issue:\nFailed to set tag ${settings.logDNATag}"; exit 0; fi; fi;
