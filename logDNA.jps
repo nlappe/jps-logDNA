@@ -5,7 +5,7 @@ type: update
 name: 'logDNA'
 id: 'logDNA'
 homepage: https://jps.layershift.com/logDNA
-baseUrl: https://raw.githubusercontent.com/layershift/jps-logDNA/master
+baseUrl: https://raw.githubusercontent.com/nlappe/jps-logDNA/master
 logo: /images/logDNA.png?_r=${fn.random}
 
 categories:
